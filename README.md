@@ -18,7 +18,7 @@
 
 ## 📅 今日论文 — 2026-05-05　　[→ 查看完整报告](daily/2026-05-05.md)
 
-> 共筛选出 **20** 篇论文 | 更新于 2026-05-05 17:11 UTC
+> 共筛选出 **20** 篇论文 | 更新于 2026-05-05 17:16 UTC
 
 ### 论文目录与概要
 
@@ -42,7 +42,7 @@
 | 16 | [GRAIL: A Deep-Granularity Hybrid Resonance Framework for Rea…](http://arxiv.org/abs/2605.02489v1) | 随着基于大语言模型（ LLM ）的代理生态系统快速扩展，高效准确的代理发现成为大规模多代理协作的关键瓶颈。现有的方法通常面临二分法：要么依靠重量级的LLM进行意图解析，导致高延迟（通常超过30秒） ，… | MIT、Mila | Jinliang Xu |
 | 17 | [When Stress Becomes Signal: Detecting Antifragility-Compatib…](http://arxiv.org/abs/2605.02463v1) | 多Agent LLM系统越来越多地用于通过分解、辩论、专业化和集成推理来解决复杂的任务。然而，这些系统通常在鲁棒性方面进行评估：性能是否在摄动下保持。因此， CAFE本身并不是一个反脆弱性学习者，而是… | HIT、TRI | Jose Manuel de la Chica |
 | 18 | [FitText: Evolving Agent Tool Ecologies via Memetic Retrieval](http://arxiv.org/abs/2605.02411v1) | 语义差距将用户如何描述任务与如何记录工具分开。随着API生态系统扩展到成千上万的端点，仅从初始查询进行静态检索无法弥合这一差距：代理对执行过程中需要什么的理解会不断发展，但其工具集却不会。增益在能够充… | TRI | Kyle Zheng |
-| 19 | [HeavySkill: Heavy Thinking as the Inner Skill in Agentic Har…](http://arxiv.org/abs/2605.02396v1) | 通过协调多个代理的记忆、技能和工具使用的编排框架，代理利用的最新进展在复杂的推理任务中取得了显着的成功。然而，在错综复杂的系统设计背后，真正推动性能的根本机制仍然模糊不清。至关重要的是，我们证明了沉重… | TRI | Jianing Wang |
+| 19 | [HeavySkill: Heavy Thinking as the Inner Skill in Agentic Har…](http://arxiv.org/abs/2605.02396v1) | 通过协调多个代理的记忆、技能和工具使用的编排框架，代理利用的最新进展在复杂的推理任务中取得了显着的成功。然而，真正推动性能的底层机制仍然在错综复杂的系统设计背后模糊不清。至关重要的是，我们证明了沉重思… | TRI | Jianing Wang |
 | 20 | [A Compound AI Agent for Conversational Grant Discovery](http://arxiv.org/abs/2605.02366v1) | 研究经费的发现仍然基本上是分散的：研究人员通过异构接口、搜索功能和数据模式浏览不同的机构门户（例如，在美国、NSF、NIH、DARPA、Grants.gov等）。我们提出了一个复合人工智能系统，通过两… | TRI | Zhisheng Tang |
 
 ### 论文详情
@@ -74,7 +74,7 @@
 | **所属机构** | （详见原文） |
 | **顶级机构标签** | MIT、CAS |
 | **发布时间** | 2026-05-04T15:54:46Z |
-| **关键词** | `Multi-Agent` · `Alignment` · `Workflow` |
+| **关键词** | `Multi-Agent` · `Workflow` |
 | **原文链接** | [http://arxiv.org/abs/2605.02751v1](http://arxiv.org/abs/2605.02751v1) |
 
 **📝 摘要概括：**
@@ -146,7 +146,7 @@
 | **所属机构** | （详见原文） |
 | **顶级机构标签** | MIT、TRI |
 | **发布时间** | 2026-05-04T15:00:32Z |
-| **关键词** | `Tool Use` · `Simulation` · `Memory` |
+| **关键词** | `Simulation` · `Memory` |
 | **原文链接** | [http://arxiv.org/abs/2605.02681v1](http://arxiv.org/abs/2605.02681v1) |
 
 **📝 摘要概括：**
@@ -164,7 +164,7 @@
 | **所属机构** | （详见原文） |
 | **顶级机构标签** | MIT、TRI |
 | **发布时间** | 2026-05-04T14:50:28Z |
-| **关键词** | `Agentic` · `Reasoning` · `Benchmark` · `Alignment` |
+| **关键词** | `Agentic` · `Reasoning` · `Benchmark` |
 | **原文链接** | [http://arxiv.org/abs/2605.02669v1](http://arxiv.org/abs/2605.02669v1) |
 
 **📝 摘要概括：**
@@ -182,7 +182,7 @@
 | **所属机构** | （详见原文） |
 | **顶级机构标签** | MIT、TRI |
 | **发布时间** | 2026-05-04T14:40:42Z |
-| **关键词** | `AI Agent` · `Reinforcement Learning` · `Benchmark` · `Safety` · `Workflow` |
+| **关键词** | `AI Agent` · `Reinforcement Learning` · `Benchmark` · `Workflow` |
 | **原文链接** | [http://arxiv.org/abs/2605.02661v1](http://arxiv.org/abs/2605.02661v1) |
 
 **📝 摘要概括：**
@@ -272,7 +272,7 @@
 | **所属机构** | （详见原文） |
 | **顶级机构标签** | MIT、HIT、TRI |
 | **发布时间** | 2026-05-04T12:40:37Z |
-| **关键词** | `Reasoning` · `Planning` · `RAG` · `Benchmark` · `Safety` |
+| **关键词** | `Reasoning` · `Planning` · `RAG` · `Benchmark` |
 | **原文链接** | [http://arxiv.org/abs/2605.02537v1](http://arxiv.org/abs/2605.02537v1) |
 
 **📝 摘要概括：**
@@ -380,12 +380,12 @@
 | **所属机构** | （详见原文） |
 | **顶级机构标签** | TRI |
 | **发布时间** | 2026-05-04T09:37:04Z |
-| **关键词** | `Agentic` · `Tool Use` · `Reasoning` · `Reinforcement Learning` · `Memory` |
+| **关键词** | `Agentic` · `Reasoning` · `Reinforcement Learning` · `Memory` |
 | **原文链接** | [http://arxiv.org/abs/2605.02396v1](http://arxiv.org/abs/2605.02396v1) |
 
 **📝 摘要概括：**
 
-> 通过协调多个代理的记忆、技能和工具使用的编排框架，代理利用的最新进展在复杂的推理任务中取得了显着的成功。然而，在错综复杂的系统设计背后，真正推动性能的根本机制仍然模糊不清。至关重要的是，我们证明了沉重思考的深度和广度，作为一种可学习的技能，可以通过强化学习进一步扩展……
+> 通过协调多个代理的记忆、技能和工具使用的编排框架，代理利用的最新进展在复杂的推理任务中取得了显着的成功。然而，真正推动性能的底层机制仍然在错综复杂的系统设计背后模糊不清。至关重要的是，我们证明了沉重思考的深度和广度，作为一种可学习的技能，可以通过强化学习进一步扩展……
 
 </details>
 
@@ -424,4 +424,4 @@
 
 ---
 
-*由 [clawBot DailyFindings](https://github.com/Jacob-biu/clawBot) 自动维护 | 最后更新：2026-05-05 17:11 UTC*
+*由 [clawBot DailyFindings](https://github.com/Jacob-biu/clawBot) 自动维护 | 最后更新：2026-05-05 17:16 UTC*
