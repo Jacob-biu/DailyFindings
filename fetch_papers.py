@@ -12,8 +12,10 @@ import os
 import re
 import sys
 import json
+import time
 import urllib.request
 import urllib.parse
+import urllib.error
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -126,20 +128,63 @@ def build_query() -> str:
 
 
 def fetch_arxiv_papers(query: str, max_results: int = FETCH_MAX) -> list[dict]:
-    """调用 arxiv API，返回解析后的论文列表"""
-    params = {
-        "search_query": query,
-        "sortBy": "submittedDate",
-        "sortOrder": "descending",
-        "max_results": str(max_results),
-        "start": "0",
-    }
-    url = "https://export.arxiv.org/api/query?" + urllib.parse.urlencode(params)
-    print(f"[INFO] 请求 arxiv API …")
-    req = urllib.request.Request(url, headers={"User-Agent": "clawBot-DailyFindings/1.0"})
-    with urllib.request.urlopen(req, timeout=90) as resp:
-        xml_bytes = resp.read()
-    return _parse_atom(xml_bytes)
+    """
+    调用 arxiv API，返回解析后的论文列表
+    带分页、请求间隔、指数退避重试，避免触发限流
+    """
+    all_papers = []
+    per_page = 100  # 每次请求100篇，避免大请求触发限流
+    user_agent = "clawBot-DailyFindings/1.0"  # 请替换为你的邮箱，提升合规性
+
+    for start in range(0, max_results, per_page):
+        current_max = min(per_page, max_results - start)
+        params = {
+            "search_query": query,
+            "sortBy": "submittedDate",
+            "sortOrder": "descending",
+            "max_results": str(current_max),
+            "start": str(start),
+        }
+        url = "https://export.arxiv.org/api/query?" + urllib.parse.urlencode(params)
+        print(f"[INFO] 请求 arxiv API 分页：start={start}, max={current_max}")
+        
+        # 指数退避重试，最多5次
+        papers = None
+        for attempt in range(5):
+            try:
+                req = urllib.request.Request(url, headers={"User-Agent": user_agent})
+                with urllib.request.urlopen(req, timeout=90) as resp:
+                    code = resp.getcode()
+                    if code == 200:
+                        xml_bytes = resp.read()
+                        papers = _parse_atom(xml_bytes)
+                        break
+                    elif code in (429, 503):
+                        # 限流或服务不可用，等待后重试
+                        wait_time = 2 ** attempt  # 1s, 2s, 4s, 8s, 16s
+                        print(f"[WARN] 收到 {code} 限流错误，第{attempt+1}次重试，等待 {wait_time}s...")
+                        time.sleep(wait_time)
+                    else:
+                        raise Exception(f"HTTP Error: {code}")
+            except Exception as exc:
+                wait_time = 2 ** attempt
+                print(f"[WARN] 请求失败：{str(exc)[:100]}，第{attempt+1}次重试，等待 {wait_time}s...")
+                time.sleep(wait_time)
+        
+        if papers is None:
+            print(f"[ERROR] 本页请求全部失败，终止拉取，已获取 {len(all_papers)} 篇")
+            break
+        
+        all_papers.extend(papers)
+        # 如果返回结果少于请求数，说明已经到最后一页
+        if len(papers) < current_max:
+            break
+        
+        # 分页请求间隔，符合arxiv官方要求：至少3秒间隔
+        print(f"[INFO] 分页间隔，等待3秒...")
+        time.sleep(3)
+    
+    return all_papers
 
 
 def _parse_atom(xml_bytes: bytes) -> list[dict]:
@@ -504,7 +549,7 @@ def generate_readme(papers: list[dict], date_str: str) -> str:
 | 🏛️ 机构筛选 | 70+ 顶级 AI 机构（MIT、Stanford、CMU、清华、OpenAI 等） |
 | 🔍 关键词 | agent · multi-agent · LLM agent · agentic · autonomous agent |
 | 📄 每日上限 | 最多 20 篇 |
-| ⏰ 更新时间 | 每天 UTC 00:00（北京时间 08:00） |
+| ⏰ 更新时间 | 每天 UTC 00:01（北京时间 08:01） |
 | 📬 通知方式 | GitHub Issue @Jacob-biu |
 
 ---
