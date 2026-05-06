@@ -48,7 +48,7 @@ jobs:
           max_attempts: 3
           retry_on: error
           timeout_minutes: 5
-          run: python fetch_papers.py
+          command: python fetch_papers.py
 
       # ── 5. 提交并推送变更（daily/ + README.md + index.json）──
       - name: 提交每日论文与首页更新
