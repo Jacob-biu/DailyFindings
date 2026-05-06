@@ -13,6 +13,7 @@ import re
 import sys
 import json
 import time
+import random
 import urllib.request
 import urllib.parse
 import urllib.error
@@ -130,11 +131,11 @@ def build_query() -> str:
 def fetch_arxiv_papers(query: str, max_results: int = FETCH_MAX) -> list[dict]:
     """
     调用 arxiv API，返回解析后的论文列表
-    带分页、请求间隔、指数退避重试，避免触发限流
+    带分页、请求间隔、指数退避重试，严格符合arxiv限流规则
     """
     all_papers = []
-    per_page = 100  # 每次请求100篇，避免大请求触发限流
-    user_agent = "clawBot-DailyFindings/1.0"  # 请替换为你的邮箱，提升合规性
+    per_page = 10  # 每次请求50篇，更小的请求避免触发限流
+    user_agent = "clawBot-DailyFindings/1.0 (contact: your-email@example.com)"  # 请替换为你的邮箱
 
     for start in range(0, max_results, per_page):
         current_max = min(per_page, max_results - start)
@@ -148,26 +149,40 @@ def fetch_arxiv_papers(query: str, max_results: int = FETCH_MAX) -> list[dict]:
         url = "https://export.arxiv.org/api/query?" + urllib.parse.urlencode(params)
         print(f"[INFO] 请求 arxiv API 分页：start={start}, max={current_max}")
         
-        # 指数退避重试，最多5次
+        # 指数退避重试，最多5次，初始等待3秒
         papers = None
         for attempt in range(5):
             try:
                 req = urllib.request.Request(url, headers={"User-Agent": user_agent})
                 with urllib.request.urlopen(req, timeout=90) as resp:
-                    code = resp.getcode()
-                    if code == 200:
-                        xml_bytes = resp.read()
-                        papers = _parse_atom(xml_bytes)
-                        break
-                    elif code in (429, 503):
-                        # 限流或服务不可用，等待后重试
-                        wait_time = 2 ** attempt  # 1s, 2s, 4s, 8s, 16s
-                        print(f"[WARN] 收到 {code} 限流错误，第{attempt+1}次重试，等待 {wait_time}s...")
-                        time.sleep(wait_time)
+                    # 正常响应，解析结果
+                    xml_bytes = resp.read()
+                    papers = _parse_atom(xml_bytes)
+                    break
+            except urllib.error.HTTPError as e:
+                # 处理HTTP错误，尤其是429/503
+                code = e.code
+                if code in (429, 503):
+                    # 优先读取服务器返回的Retry-After头
+                    retry_after = e.headers.get('Retry-After')
+                    if retry_after:
+                        try:
+                            wait_time = int(retry_after)
+                            print(f"[WARN] 服务器要求等待 {wait_time} 秒后重试...")
+                        except:
+                            # 解析失败，使用指数退避+抖动
+                            wait_time = 3 * (2 ** attempt) + random.randint(0, 3)
                     else:
-                        raise Exception(f"HTTP Error: {code}")
+                        wait_time = 3 * (2 ** attempt) + random.randint(0, 3)
+                    
+                    print(f"[WARN] 收到 {code} 限流错误，第{attempt+1}次重试，等待 {wait_time} 秒...")
+                    time.sleep(wait_time)
+                else:
+                    # 其他错误，直接抛出
+                    raise e
             except Exception as exc:
-                wait_time = 2 ** attempt
+                # 网络错误等其他异常，使用指数退避重试
+                wait_time = 3 * (2 ** attempt) + random.randint(0, 3)
                 print(f"[WARN] 请求失败：{str(exc)[:100]}，第{attempt+1}次重试，等待 {wait_time}s...")
                 time.sleep(wait_time)
         
@@ -180,9 +195,9 @@ def fetch_arxiv_papers(query: str, max_results: int = FETCH_MAX) -> list[dict]:
         if len(papers) < current_max:
             break
         
-        # 分页请求间隔，符合arxiv官方要求：至少3秒间隔
-        print(f"[INFO] 分页间隔，等待3秒...")
-        time.sleep(3)
+        # 分页请求间隔，严格遵守arxiv的限流要求，5秒间隔
+        print(f"[INFO] 分页间隔，等待5秒...")
+        time.sleep(5)
     
     return all_papers
 
@@ -320,7 +335,9 @@ def _translate_to_zh(text: str, retries: int = 2) -> str:
                     return translated
 
         except Exception as exc:
-            print(f"[WARN] 翻译 API 第{attempt+1}次尝试失败：{exc}")
+            wait_time = 2 ** attempt
+            print(f"[WARN] 翻译 API 第{attempt+1}次尝试失败：{exc}，等待 {wait_time} 秒...")
+            time.sleep(wait_time)
 
     # 全部重试失败，回退到原文
     return f"{text}（翻译服务暂不可用）"
@@ -549,7 +566,7 @@ def generate_readme(papers: list[dict], date_str: str) -> str:
 | 🏛️ 机构筛选 | 70+ 顶级 AI 机构（MIT、Stanford、CMU、清华、OpenAI 等） |
 | 🔍 关键词 | agent · multi-agent · LLM agent · agentic · autonomous agent |
 | 📄 每日上限 | 最多 20 篇 |
-| ⏰ 更新时间 | 每天 UTC 00:01（北京时间 08:01） |
+| ⏰ 更新时间 | 每天 UTC 00:05（北京时间 08:05） |
 | 📬 通知方式 | GitHub Issue @Jacob-biu |
 
 ---
