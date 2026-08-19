@@ -16,394 +16,337 @@
 
 ---
 
-## 📅 今日论文 — 2026-08-18　　[→ 查看完整报告](daily/2026-08-18.md)
+## 📅 今日论文 — 2026-08-19　　[→ 查看完整报告](daily/2026-08-19.md)
 
-> 共筛选出 **20** 篇论文 | 更新于 2026-08-18 22:21 UTC
+> 共筛选出 **17** 篇论文 | 更新于 2026-08-19 22:22 UTC
 
 ### 论文目录与概要
 
 | # | 论文标题 | 核心概要 | 来源机构 | 第一作者 |
 |---|---------|---------|---------|--------|
-| 1 | [Don't Drop the BATON: Long-Horizon Robot Manipulation via Ag…](http://arxiv.org/abs/2608.16889v1) | 长视野机器人操纵将许多接触丰富的技能链接到一个多阶段任务中。视觉-语言-行动（ VLA ）模型越来越多地掌握个人技能，但链条仍然失败：错误超出了策略的纠正能力，一个子任务无声地限制了下一个子任务。在长… | MIT、TRI | Bingxin Xu |
-| 2 | [AutoSR: Automatic Symbolic Regression by Searching Research …](http://arxiv.org/abs/2608.16876v1) | 我们引入了自动符号回归（ AutoSR ） ，这是一个完全自动化的系统，通过搜索持久的科学调查而不是孤立的方程来实例化研究空间符号回归。有限的、嘈杂的数据通常会产生数值竞争表达式，这意味着观察到的制度… | CAS | Kejia Zhang |
-| 3 | [HAF: Adapting Generalist VLAs to Humanoid Whole-Body Loco-ma…](http://arxiv.org/abs/2608.16837v1) | 人形机器人在以人为中心的环境中作为通用代理具有很大的前景，但通用视觉-语言-行动（ VLA ）基础模型不容易适用于人形全身机器人操作。人形运动的高维度和相互依赖性使得传统的单级VLA架构难以有效协调运… | HIT、TRI | Langzhe Gu |
-| 4 | [GEO-Flag: Detecting and Measuring GEO-Optimized Web Content](http://arxiv.org/abs/2608.16824v1) | 生成引擎优化（ GEO ）修改网络内容，以增加其被生成搜索引擎选择和引用的可能性。这可能会使战略上优化的页面可见性与其权威或相关性不成比例，甚至会使弱信息或虚假信息看起来得到很好的支持。我们的研究结果… | Google、TRI | Junjie Chu |
-| 5 | [When State Becomes an Attack Surface: State-Semantic Injecti…](http://arxiv.org/abs/2608.16806v1) | 大型语言模型（ LLM ）已经展示了上下文学习、任务分解、逐步推理和代码生成的能力，推动其从文本生成模型逐渐演变为能够感知环境、调用工具和执行任务的代理核心。传统的LLM代理通常通过网页、文档、数据库… | TRI | Jiawei Liu |
-| 6 | [When Agents Coordinate: Measuring Coordination in Multi-Agen…](http://arxiv.org/abs/2608.16801v1) | 我们研究AI编码代理团队在解决编程任务时如何协调。目前的评估通常会报告客服代表是否完成了任务以及运行成本，而团队内部的协调在很大程度上无法衡量。在244次额外的运行中，代理仍然在五分之四的运行中达到它… | CAS | Giuseppe Destefanis |
-| 7 | [Neurosymbolic Embodied Agents](http://arxiv.org/abs/2608.16794v1) | 语言和视觉语言模型生成合理的具体计划，但不能保证可执行性，因为它们的输出可能会违反环境动态或对错误接地的实体采取行动。我们提出了一种神经符号代理，它将长视野家务分解为任务导向的视觉探索和约束的符号规划… | TRI | Mohammad Albinhassan |
-| 8 | [Topological Attribution Distance (TAD): Revealing Segment-Le…](http://arxiv.org/abs/2608.16775v1) | 大型语言模型（ LLM ）越来越多地部署在网络安全运营中，以协助网络安全分析师快速制定应对新兴威胁的决策。但是，在网络安全中使用LLM时必须满足一个主要标准，即对生成的输出的信任。这可以根据每个LLM… | Mila、TRI | Reza Fayyazi |
-| 9 | [Would this change your answer? Evaluating Explanations of LL…](http://arxiv.org/abs/2608.16747v1) | 人工智能研究的许多领域，如语言模型的可解释性和思维链的忠诚度，都试图解释模型行为。但是什么是“好”的解释呢？总体而言， CHIVE自动发现自然发生的LLM行为的解释，使我们能够评估和改进解释LLM行为… | TRI | Adam Karvonen |
-| 10 | [TDD-Agent: Test-Driven Reasoning for Code Generation](http://arxiv.org/abs/2608.16742v1) | 大型语言模型（ LLM ）在代码生成方面取得了显着进展，但确保复杂存储库级任务的正确性仍然具有挑战性。现有方法通常将生成的测试用作静态事后验证器，这限制了它们指导实施的能力，并且在测试本身不完整或不正… | MIT、TRI | Hongyue Yu |
-| 11 | [GoalEvolve: From Handcrafted Algorithm Priors to Goal-Driven…](http://arxiv.org/abs/2608.16733v1) | 物理设计算法在紧密耦合的多阶段优化流程中运行，其中阶段-局部增益可能消失或诱发下游退化。现有的程序进化框架通常依赖于阶段-局部目标或未分化的多指标反馈，这些反馈既不能保证更好的最终结果，也不能确定哪些… | TRI | Haixu Liu |
-| 12 | [The Ethical Decision Head: Operationalizing Normative Ethics…](http://arxiv.org/abs/2608.16710v1) | 随着自动驾驶汽车（ AV ）接近4级和5级运营能力[SAE International, 2018] ，其车载决策系统不仅必须处理安全关键的运动，还必须处理其随后的道德权重。本文详细介绍了道德决策主管… | CAS | Thomas Mbrice |
-| 13 | [Semantic Bandits: In-Context Exploration-Exploitation is Bia…](http://arxiv.org/abs/2608.16707v1) | 在需要复杂的环境探索的环境中，大型语言模型（ LLM ）越来越多地被部署为决策代理。然而，现有的工作提出了LLM如何真正平衡勘探和开发的问题。总的来说，我们认为，使用语言来定义环境和奖励会引入不可避免… | TRI | David Eric Austin |
-| 14 | [Chronocooked: A Benchmark for Implicit Interval Timing in Re…](http://arxiv.org/abs/2608.16666v1) | 本文提出了Chronocooked ，这是一个强化学习（ RL ）基准套件，用于研究RL代理中的隐式间隔时间。套房的灵感来自Overcooked ，包括需要临时决策的烹饪场景。这项工作最终旨在强调将时… | MIT、TRI | Amrapali Pednekar |
-| 15 | [Orbit-Planner: Towards Latent World Models for On-Orbit Obst…](http://arxiv.org/abs/2608.16651v1) | 用于在轨导航任务的卫星代理需要使用有限的机载观测来预测碰撞风险。然而，传统的规划者通常依赖于预定义的地图和固定的环境假设，限制了它们在动态在轨场景中的适应性。优惠码可在https://github.c… | MIT | Zhijian Li |
-| 16 | [Reconstruction: A Blind Benchmark for Recovering Research Id…](http://arxiv.org/abs/2608.16645v1) | 当只给出论文的出版前参考书目时，语言模型能否恢复已发表论文的真正研究理念？我们引入了重建，这是一个盲目的想法恢复基准，它保留了种子纸和所有同期或未来的文献，并要求模型提出假设，即独立的大型语言模型法官… | TRI | Shaolong Chen |
-| 17 | [PDDLCoder: Agentic PDDL Generation for LLM-Assisted Symbolic…](http://arxiv.org/abs/2608.16637v1) | LLM在长期规划中仍然不可靠，通常会产生逻辑不一致或不适用的计划。最近的混合方法将自然语言转换为规划域定义语言（ PDDL ） ，允许符号规划人员生成可验证的计划。我们的工作证明了代理PDDL生成用于… | MIT | Veit Laule |
-| 18 | [The Working Set of a Coding Agent: Coherence Debt in Reposit…](http://arxiv.org/abs/2608.16630v1) | 存储库规模编码要求代理在有界上下文窗口内保持测试、导入、配置和迁移规则的一致性。我们将其建模为重建耦合事实图：在每次编辑时，所需的事实来自最近的上下文或参数记忆，而两者所涵盖的事实都不构成一致性债务。… | TRI | Bardia Mohammadi |
-| 19 | [Cost Scales with Change, Not Corpus Size: Incrementally Main…](http://arxiv.org/abs/2608.16621v1) | 检索-增强和代理问答系统越来越多地在查询时重新推导语料库的含义。简单地说，不是重新推导语料库在每个问题上的含义，而是在文档到达时完成一次工作，然后仅被查阅-一个编译器，而不是一个意义的解释器。结果支持… | TRI | Yusuke Takahashi |
-| 20 | [Physics of Agents: Statistical Mechanics Predicts Collective…](http://arxiv.org/abs/2608.16578v1) | 人工智能代理越来越多地作为交互系统的一部分而不是孤立地运行。随着代理人交换信息并共同做出决策，他们的互动可以改善集体推理，但也可能产生放牧、两极分化或放大共同的偏见。总体而言，我们的研究结果表明，像其… | TRI | Batu El |
+| 1 | [On the Fragility of Self-Improving Agents: Variance, Task Or…](http://arxiv.org/abs/2608.18066v1) | 基于记忆的自我改善代理--那些从在线任务流中学习并通过维护文本记忆库而随着时间的推移而改进的代理--在最近的文献中显示出巨大的希望。然而，这些方法的可靠性方面被严重忽视。此外，我们关于低规格的研究结果… | TRI | Qinyuan Ye |
+| 2 | [Delegation Asymmetry in Agentic Recommender Systems: Measuri…](http://arxiv.org/abs/2608.18058v1) | 代表用户交谈的自主LLM代理是匹配平台中新出现的设计模式，但其可行性取决于很少检查的条件：用户不仅必须接受将对话委托给代理，还必须接受来自其他人的代理中介通信。我们使用两项对主要约会平台活跃用户的大规… | TRI | Daria Leshchikova |
+| 3 | [StagedWorkspace: A Versioned Workspace for Knowledge-Work Ag…](http://arxiv.org/abs/2608.18050v1) | 人工智能代理越来越多地执行知识工作（即生成和修改持久性数字工件，如代码存储库、文档、电子表格、幻灯片、报告） ，但他们搜索的解析视图、他们编辑的本机文件、他们查看的更改以及他们提交的工件可以引用同一工… | MIT | Yining Hua |
+| 4 | [Policy-Invariant Reward Shaping from LLM Feedback: A Framewo…](http://arxiv.org/abs/2608.18008v1) | 将大型语言模型与强化学习相结合越来越受到探索，但LLM衍生奖励信号的理论状态往往是隐含的。我们将LLM-planner和RL-controller混合架构形式化为目标增强马尔可夫决策过程，并表明当LL… | HIT | Christophe D. Hounwanou |
+| 5 | [EvoTS-Agent: A Self-Evolving LLM Agent for Financial Time Se…](http://arxiv.org/abs/2608.17933v1) | 金融时间序列表现出非平稳和异构的统计特性，使得变更点检测具有挑战性，因为没有单一的无监督算法在资产和市场制度中一致地执行。因此，传统工作流程在很大程度上依赖于专家驱动的模型选择、特征设计和超参数调整，… | MIT | Lei Jiang |
+| 6 | [Collective Counterfactual Planning: Coordination, Consent, a…](http://arxiv.org/abs/2608.17932v1) | 小组通常会完成任何单个成员都无法单独计划、执行或验证的项目。我们提出了这种现象的正式模型，即集体反事实规划（ CCP ） ，其中每个代理的约束限制既不是能力，也不是知识，也不是可观察性，而是代表性几何… | MIT、TRI | Chainarong Amornbunchornvej |
+| 7 | [A Theoretical Framework for Parallel Lifelong MAPF Using Gro…](http://arxiv.org/abs/2608.17928v1) | 在Lifelong Multi-Agent Path Finding （ L-MAPF ）问题中，座席必须反复从一个目的地移动到另一个目的地，同时避免障碍物和座席间碰撞。滚动地平线碰撞解决（ RHCR… | MIT、Mila | Alex DeWeese |
+| 8 | [AutoResearch: Insight In, Hallucination Out](http://arxiv.org/abs/2608.17906v1) | 自主研究系统越来越能够执行长时间的研究工作流程，但仅靠自动化并不能确保由此产生的过程保持科学基础。我们引入了AutoResearch ，这是一个将创意生成与创意执行联系起来的两阶段系统，以解决研究创意… | TRI | Yiming Ren |
+| 9 | [AdaLens: Interactive Storyline for Monitoring and Steering L…](http://arxiv.org/abs/2608.17834v1) | 大型语言模型正在将数据科学推向越来越自主和代理化的工作流程，最近的系统已经支持多步骤和长期运行的分析。随着这些工作流程变得更加自主，传统界面不再为两个关键要求提供足够的支持：理解客服代表不断发展的推理… | CAS | Yangtian Liu |
+| 10 | [Debate Training Reduces Reward Hacking in RLAIF](http://arxiv.org/abs/2608.17776v1) | 我们证明，与从人工智能反馈（ RLAIF ）基线进行强化学习相比，使用辩论（由较弱的LLM法官裁定的生成者和批评者之间的双人对抗游戏）对LLM进行RL微调，可以减少奖励黑客攻击。奖励黑客是RLAIF的… | MIT、TRI | Zachary Kenton |
+| 11 | [D$^2$ACCI: A Dual-Loop Diagnostic Protocol for Evidence-Pres…](http://arxiv.org/abs/2608.17756v1) | 内存是LLM代理的关键能力。持久记忆将此扩展到整个会话--启用召回、修改和个性化。这些结果表明，健壮的记忆系统迭代需要可追溯的、统计学上接地和回归感知的证据--正是差距D $ ^ 2 $ ACCI填补… | TRI | Xule Liu |
+| 12 | [Beyond Suspicious Steps: Ontological Trust in Long-Horizon A…](http://arxiv.org/abs/2608.17718v1) | 远景代理越来越多地跨越许多步骤、工具和观察。在此设置中，相关的监督问题不仅是每个操作是否在本地有效，而且是不断变化的轨迹是否仍然对应于用户授权的任务。伪一致性更难：检测取决于任务完成是否在外部可见，这… | MIT | An He |
+| 13 | [Cross-View Correspondence Is a Measurement Intervention: Two…](http://arxiv.org/abs/2608.17713v1) | 座席评估和基于跟踪的学习通常通过被视为中性预处理的回复后对应来比较转换后的视图中的输出。我们证明了这种对应是一种测量干预：省略它可以产生灵敏度，过度激进的映射可以产生不变性，多个最优对应可以留下机制标… | MIT、TRI | Zhen Zhang |
+| 14 | [GADR: Gathering Architecture Decision Records from Meeting T…](http://arxiv.org/abs/2608.17694v1) | 现有的基于LLM的架构决策记录（ ADR ）生成方法共享一个关键且基本上未经审查的假设：该输入已经合理结构化。在实践中，建筑决策产生于非正式、嘈杂的会议，在这些会议中，选择是隐含的、支离破碎的，并且与… | HIT | Lucas Daniel Costa da Silva |
+| 15 | [Benchmarking Automated Security Patch Backporting: How Far A…](http://arxiv.org/abs/2608.17671v1) | 自动安全补丁回移对于缓解N天的漏洞至关重要。最近的工具报告其各自数据集的成功率超过80%。可执行文件反馈细化可为最难的可执行文件提供有限但可衡量的恢复。 | MIT、CAS | Jincheng Yang |
+| 16 | [GraphWake: Group Polarization via Memory-Mediated Polarizati…](http://arxiv.org/abs/2608.17665v1) | 由LLM驱动的代理可以在在线平台上自主交换意见并形成社区。这种智能体运营的社交平台引发了一个新的安全问题：攻击者可能会操纵智能体来诱发群体极化。这些发现揭示了社区层面的两极分化风险。 | CAS、TRI | Haoran Bu |
+| 17 | [MobileWorldSafety: Benchmarking GUI Agent Safety Against Env…](http://arxiv.org/abs/2608.17659v1) | 自主操作智能手机的LLM驱动的GUI代理正在从研究原型迅速过渡到早期的真实世界部署。但是，由于这些药剂经常处理不可信的环境内容，因此它们非常容易受到环境注入攻击，包括间接提示注入和对抗性指令。Mobi… | CAS | Sujin Chen |
 
 ### 论文详情
 
 <details>
-<summary><b>1. Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory</b></summary>
+<summary><b>1. On the Fragility of Self-Improving Agents: Variance, Task Order, and Underspecification</b></summary>
 
 | 字段 | 内容 |
 |------|------|
-| **作者** | Bingxin Xu、Yuzhang Shang、Emilio Ferrara |
-| **所属机构** | （详见原文） |
-| **顶级机构标签** | MIT、TRI |
-| **发布时间** | 2026-08-17T17:59:57Z |
-| **关键词** | `LLM Agent` · `Agentic` · `Benchmark` · `Memory` |
-| **原文链接** | [http://arxiv.org/abs/2608.16889v1](http://arxiv.org/abs/2608.16889v1) |
-
-**📝 摘要概括：**
-
-> 长视野机器人操纵将许多接触丰富的技能链接到一个多阶段任务中。视觉-语言-行动（ VLA ）模型越来越多地掌握个人技能，但链条仍然失败：错误超出了策略的纠正能力，一个子任务无声地限制了下一个子任务。在长期基准RoboMemArena上，与SoTA相比， BATON将任务成功率提高了11.6% ，累计成功率提高了14.9%。
-
-</details>
-
-<details>
-<summary><b>2. AutoSR: Automatic Symbolic Regression by Searching Research States</b></summary>
-
-| 字段 | 内容 |
-|------|------|
-| **作者** | Kejia Zhang、Youran Sun、Xinyu Ren、Chugang Yi、Haizhao Yang |
-| **所属机构** | （详见原文） |
-| **顶级机构标签** | CAS |
-| **发布时间** | 2026-08-17T17:55:26Z |
-| **关键词** | `Reasoning` · `Benchmark` |
-| **原文链接** | [http://arxiv.org/abs/2608.16876v1](http://arxiv.org/abs/2608.16876v1) |
-
-**📝 摘要概括：**
-
-> 我们引入了自动符号回归（ AutoSR ） ，这是一个完全自动化的系统，通过搜索持久的科学调查而不是孤立的方程来实例化研究空间符号回归。有限的、嘈杂的数据通常会产生数值竞争表达式，这意味着观察到的制度之外的行为非常不同，使得数值拟合和句法复杂性不足以衡量科学可信度。总的来说， Au…
-
-</details>
-
-<details>
-<summary><b>3. HAF: Adapting Generalist VLAs to Humanoid Whole-Body Loco-manipulation via Hierarchical Action Flow and Spectral Latent RL</b></summary>
-
-| 字段 | 内容 |
-|------|------|
-| **作者** | Langzhe Gu、Chengkai Hou、Meng Li、Xinhua Wang、Jiaming Liu 等（共 17 人） |
-| **所属机构** | （详见原文） |
-| **顶级机构标签** | HIT、TRI |
-| **发布时间** | 2026-08-17T17:22:33Z |
-| **关键词** | `Reinforcement Learning` · `RAG` |
-| **原文链接** | [http://arxiv.org/abs/2608.16837v1](http://arxiv.org/abs/2608.16837v1) |
-
-**📝 摘要概括：**
-
-> 人形机器人在以人为中心的环境中作为通用代理具有很大的前景，但通用视觉-语言-行动（ VLA ）基础模型不容易适用于人形全身机器人操作。人形运动的高维度和相互依赖性使得传统的单级VLA架构难以有效协调运动、腰部姿势和双臂操纵。
-
-</details>
-
-<details>
-<summary><b>4. GEO-Flag: Detecting and Measuring GEO-Optimized Web Content</b></summary>
-
-| 字段 | 内容 |
-|------|------|
-| **作者** | Junjie Chu、Ye Leng、Mingjie Li、Yun Shen、Xinyue Shen 等（共 6 人） |
-| **所属机构** | （详见原文） |
-| **顶级机构标签** | Google、TRI |
-| **发布时间** | 2026-08-17T17:12:11Z |
-| **关键词** | `Retrieval` · `Benchmark` · `Evaluation` |
-| **原文链接** | [http://arxiv.org/abs/2608.16824v1](http://arxiv.org/abs/2608.16824v1) |
-
-**📝 摘要概括：**
-
-> 生成引擎优化（ GEO ）修改网络内容，以增加其被生成搜索引擎选择和引用的可能性。这可能会使战略上优化的页面可见性与其权威或相关性不成比例，甚至会使弱信息或虚假信息看起来得到很好的支持。我们的研究结果为在真实世界的搜索生态系统中系统地检测、审核和测量GEO奠定了基础。
-
-</details>
-
-<details>
-<summary><b>5. When State Becomes an Attack Surface: State-Semantic Injection in LLM-Driven Embodied Agents</b></summary>
-
-| 字段 | 内容 |
-|------|------|
-| **作者** | Jiawei Liu、Jiacheng Guo、Tian Zhang、Yiwei Xu、Juan Wang 等（共 10 人） |
+| **作者** | Qinyuan Ye、Yu Li、Yada Pruksachatkun、Jiaxin Zhang、Chien-Sheng Wu |
 | **所属机构** | （详见原文） |
 | **顶级机构标签** | TRI |
-| **发布时间** | 2026-08-17T17:02:07Z |
-| **关键词** | `LLM Agent` · `Reasoning` · `Planning` · `Code Generation` · `Embodied AI` |
-| **原文链接** | [http://arxiv.org/abs/2608.16806v1](http://arxiv.org/abs/2608.16806v1) |
+| **发布时间** | 2026-08-18T17:55:07Z |
+| **关键词** | `RAG` · `Evaluation` · `Memory` |
+| **原文链接** | [http://arxiv.org/abs/2608.18066v1](http://arxiv.org/abs/2608.18066v1) |
 
 **📝 摘要概括：**
 
-> 大型语言模型（ LLM ）已经展示了上下文学习、任务分解、逐步推理和代码生成的能力，推动其从文本生成模型逐渐演变为能够感知环境、调用工具和执行任务的代理核心。传统的LLM代理通常通过网页、文档、数据库或外部工具获取信息，并生成相应的调用…
+> 基于记忆的自我改善代理--那些从在线任务流中学习并通过维护文本记忆库而随着时间的推移而改进的代理--在最近的文献中显示出巨大的希望。然而，这些方法的可靠性方面被严重忽视。此外，我们关于低规格的研究结果要求系统和接口能够实现有效的人为监督，防止代理以不可预见的方式失败。
 
 </details>
 
 <details>
-<summary><b>6. When Agents Coordinate: Measuring Coordination in Multi-Agent AI Coding</b></summary>
+<summary><b>2. Delegation Asymmetry in Agentic Recommender Systems: Measuring Two-Sided Receptivity in Online Dating</b></summary>
 
 | 字段 | 内容 |
 |------|------|
-| **作者** | Giuseppe Destefanis、Tomaso Aste |
-| **所属机构** | （详见原文） |
-| **顶级机构标签** | CAS |
-| **发布时间** | 2026-08-17T16:57:38Z |
-| **关键词** | `Multi-Agent` · `Evaluation` |
-| **原文链接** | [http://arxiv.org/abs/2608.16801v1](http://arxiv.org/abs/2608.16801v1) |
-
-**📝 摘要概括：**
-
-> 我们研究AI编码代理团队在解决编程任务时如何协调。目前的评估通常会报告客服代表是否完成了任务以及运行成本，而团队内部的协调在很大程度上无法衡量。在244次额外的运行中，代理仍然在五分之四的运行中达到它，而协调员和文件通道结果重现。
-
-</details>
-
-<details>
-<summary><b>7. Neurosymbolic Embodied Agents</b></summary>
-
-| 字段 | 内容 |
-|------|------|
-| **作者** | Mohammad Albinhassan、Yuming Feng、Alessandra Russo、Pranava Madhyastha |
+| **作者** | Daria Leshchikova、Valentina V. Kuskova、Dmitry Zaytsev、Valerii Klimov |
 | **所属机构** | （详见原文） |
 | **顶级机构标签** | TRI |
-| **发布时间** | 2026-08-17T16:50:59Z |
-| **关键词** | `Planning` · `Embodied AI` |
-| **原文链接** | [http://arxiv.org/abs/2608.16794v1](http://arxiv.org/abs/2608.16794v1) |
+| **发布时间** | 2026-08-18T17:51:16Z |
+| **关键词** | `LLM Agent` · `Agentic` |
+| **原文链接** | [http://arxiv.org/abs/2608.18058v1](http://arxiv.org/abs/2608.18058v1) |
 
 **📝 摘要概括：**
 
-> 语言和视觉语言模型生成合理的具体计划，但不能保证可执行性，因为它们的输出可能会违反环境动态或对错误接地的实体采取行动。我们提出了一种神经符号代理，它将长视野家务分解为任务导向的视觉探索和约束的符号规划。该方法还使用比扩展思维少几倍的生成令牌和少得多的模型访问……
+> 代表用户交谈的自主LLM代理是匹配平台中新出现的设计模式，但其可行性取决于很少检查的条件：用户不仅必须接受将对话委托给代理，还必须接受来自其他人的代理中介通信。我们使用两项对主要约会平台活跃用户的大规模调查来研究这种情况（生成配置文件特征为N = 2,894 ；自主性为N = 2,617…
 
 </details>
 
 <details>
-<summary><b>8. Topological Attribution Distance (TAD): Revealing Segment-Level RAG Influence on LLM Output Geometry for Incident Log Analysis</b></summary>
+<summary><b>3. StagedWorkspace: A Versioned Workspace for Knowledge-Work Agents</b></summary>
 
 | 字段 | 内容 |
 |------|------|
-| **作者** | Reza Fayyazi、Michael Zuzak、Shanchieh Jay Yang |
-| **所属机构** | （详见原文） |
-| **顶级机构标签** | Mila、TRI |
-| **发布时间** | 2026-08-17T16:21:18Z |
-| **关键词** | `Agentic` · `RAG` · `Workflow` |
-| **原文链接** | [http://arxiv.org/abs/2608.16775v1](http://arxiv.org/abs/2608.16775v1) |
-
-**📝 摘要概括：**
-
-> 大型语言模型（ LLM ）越来越多地部署在网络安全运营中，以协助网络安全分析师快速制定应对新兴威胁的决策。但是，在网络安全中使用LLM时必须满足一个主要标准，即对生成的输出的信任。这可以根据每个LLM的隐藏状态提供可解释且值得信赖的跟踪，以了解几何上不同的检索日志信息……
-
-</details>
-
-<details>
-<summary><b>9. Would this change your answer? Evaluating Explanations of LLM Behavior In The Wild with Counterfactual Experiments</b></summary>
-
-| 字段 | 内容 |
-|------|------|
-| **作者** | Adam Karvonen、Euan Ong、Subhash Kantamneni、Samuel Marks |
-| **所属机构** | （详见原文） |
-| **顶级机构标签** | TRI |
-| **发布时间** | 2026-08-17T15:57:06Z |
-| **关键词** | `Agentic` |
-| **原文链接** | [http://arxiv.org/abs/2608.16747v1](http://arxiv.org/abs/2608.16747v1) |
-
-**📝 摘要概括：**
-
-> 人工智能研究的许多领域，如语言模型的可解释性和思维链的忠诚度，都试图解释模型行为。但是什么是“好”的解释呢？总体而言， CHIVE自动发现自然发生的LLM行为的解释，使我们能够评估和改进解释LLM行为的方法。
-
-</details>
-
-<details>
-<summary><b>10. TDD-Agent: Test-Driven Reasoning for Code Generation</b></summary>
-
-| 字段 | 内容 |
-|------|------|
-| **作者** | Hongyue Yu、Kefan Li、Jiakun Li、Hongzheng Chai、Yuan Yuan 等（共 7 人） |
-| **所属机构** | （详见原文） |
-| **顶级机构标签** | MIT、TRI |
-| **发布时间** | 2026-08-17T15:52:04Z |
-| **关键词** | `Reasoning` · `RAG` · `Retrieval` · `Benchmark` · `Code Generation` |
-| **原文链接** | [http://arxiv.org/abs/2608.16742v1](http://arxiv.org/abs/2608.16742v1) |
-
-**📝 摘要概括：**
-
-> 大型语言模型（ LLM ）在代码生成方面取得了显着进展，但确保复杂存储库级任务的正确性仍然具有挑战性。现有方法通常将生成的测试用作静态事后验证器，这限制了它们指导实施的能力，并且在测试本身不完整或不正确时可能会引入误导性反馈。我们的源代码可在https://anonymous.4open.science/r上找到……
-
-</details>
-
-<details>
-<summary><b>11. GoalEvolve: From Handcrafted Algorithm Priors to Goal-Driven Evolution of Physical Design Algorithms</b></summary>
-
-| 字段 | 内容 |
-|------|------|
-| **作者** | Haixu Liu、Lei Zhou、Yuhao Ren、Yumao Wu、Zhiang Wang |
-| **所属机构** | （详见原文） |
-| **顶级机构标签** | TRI |
-| **发布时间** | 2026-08-17T15:45:33Z |
-| **关键词** | `RAG` · `Evaluation` |
-| **原文链接** | [http://arxiv.org/abs/2608.16733v1](http://arxiv.org/abs/2608.16733v1) |
-
-**📝 摘要概括：**
-
-> 物理设计算法在紧密耦合的多阶段优化流程中运行，其中阶段-局部增益可能消失或诱发下游退化。现有的程序进化框架通常依赖于阶段-局部目标或未分化的多指标反馈，这些反馈既不能保证更好的最终结果，也不能确定哪些未满足的要求应该指导下一次迭代。在根据Codex目标模式评估的所有三种设计中……
-
-</details>
-
-<details>
-<summary><b>12. The Ethical Decision Head: Operationalizing Normative Ethics in Autonomous Vehicles via Reinforcement Learning from Human Feedback</b></summary>
-
-| 字段 | 内容 |
-|------|------|
-| **作者** | Thomas Mbrice、Ammar Ali、Sami Mian、Khai Hern Low、Eric Chen 等（共 8 人） |
-| **所属机构** | （详见原文） |
-| **顶级机构标签** | CAS |
-| **发布时间** | 2026-08-17T15:26:09Z |
-| **关键词** | `Reasoning` · `Reinforcement Learning` · `Simulation` |
-| **原文链接** | [http://arxiv.org/abs/2608.16710v1](http://arxiv.org/abs/2608.16710v1) |
-
-**📝 摘要概括：**
-
-> 随着自动驾驶汽车（ AV ）接近4级和5级运营能力[SAE International, 2018] ，其车载决策系统不仅必须处理安全关键的运动，还必须处理其随后的道德权重。本文详细介绍了道德决策主管（ EDH ） ，这是一个深度重组学习（ RL ）框架，将道德推理编码为可微分的奖励信号，使政治梯度代理能够学习道德标准……
-
-</details>
-
-<details>
-<summary><b>13. Semantic Bandits: In-Context Exploration-Exploitation is Biased by Semantic Priors</b></summary>
-
-| 字段 | 内容 |
-|------|------|
-| **作者** | David Eric Austin、Kaheer Suleman、Jackie Chi Kit Cheung |
-| **所属机构** | （详见原文） |
-| **顶级机构标签** | TRI |
-| **发布时间** | 2026-08-17T15:25:18Z |
-| **关键词** | `LLM Agent` |
-| **原文链接** | [http://arxiv.org/abs/2608.16707v1](http://arxiv.org/abs/2608.16707v1) |
-
-**📝 摘要概括：**
-
-> 在需要复杂的环境探索的环境中，大型语言模型（ LLM ）越来越多地被部署为决策代理。然而，现有的工作提出了LLM如何真正平衡勘探和开发的问题。总的来说，我们认为，使用语言来定义环境和奖励会引入不可避免的偏见，因为模型是在单词共现上训练的，这意味着……
-
-</details>
-
-<details>
-<summary><b>14. Chronocooked: A Benchmark for Implicit Interval Timing in Reinforcement Learning Agents</b></summary>
-
-| 字段 | 内容 |
-|------|------|
-| **作者** | Amrapali Pednekar、Alvaro Garrido-Perez、Yara Khaluf、Pieter Simoens |
-| **所属机构** | （详见原文） |
-| **顶级机构标签** | MIT、TRI |
-| **发布时间** | 2026-08-17T14:55:59Z |
-| **关键词** | `Reinforcement Learning` · `Benchmark` · `Evaluation` |
-| **原文链接** | [http://arxiv.org/abs/2608.16666v1](http://arxiv.org/abs/2608.16666v1) |
-
-**📝 摘要概括：**
-
-> 本文提出了Chronocooked ，这是一个强化学习（ RL ）基准套件，用于研究RL代理中的隐式间隔时间。套房的灵感来自Overcooked ，包括需要临时决策的烹饪场景。这项工作最终旨在强调将时间感知和时间处理整合到专为人类机器人交互和部署于时间依赖型人类社会的人工智能体中的必要性。
-
-</details>
-
-<details>
-<summary><b>15. Orbit-Planner: Towards Latent World Models for On-Orbit Obstacle Avoidance of Satellite Agents</b></summary>
-
-| 字段 | 内容 |
-|------|------|
-| **作者** | Zhijian Li、Chao Ren、Peijin Wang、Xian Sun |
+| **作者** | Yining Hua、Hongbin Na、Yifan Zhou、Akshay Kalose、Cyrus Ayubcha 等（共 6 人） |
 | **所属机构** | （详见原文） |
 | **顶级机构标签** | MIT |
-| **发布时间** | 2026-08-17T14:49:07Z |
-| **关键词** | — |
-| **原文链接** | [http://arxiv.org/abs/2608.16651v1](http://arxiv.org/abs/2608.16651v1) |
+| **发布时间** | 2026-08-18T17:44:18Z |
+| **关键词** | `AI Agent` · `Benchmark` |
+| **原文链接** | [http://arxiv.org/abs/2608.18050v1](http://arxiv.org/abs/2608.18050v1) |
 
 **📝 摘要概括：**
 
-> 用于在轨导航任务的卫星代理需要使用有限的机载观测来预测碰撞风险。然而，传统的规划者通常依赖于预定义的地图和固定的环境假设，限制了它们在动态在轨场景中的适应性。优惠码可在https://github.com/ZhijianLi2003/Orbit_Planner上获得。
+> 人工智能代理越来越多地执行知识工作（即生成和修改持久性数字工件，如代码存储库、文档、电子表格、幻灯片、报告） ，但他们搜索的解析视图、他们编辑的本机文件、他们查看的更改以及他们提交的工件可以引用同一工作产品的不同版本。我们将其制定为工作空间状态合同：每个视图都应明确绑定到……的版本
 
 </details>
 
 <details>
-<summary><b>16. Reconstruction: A Blind Benchmark for Recovering Research Ideas from Pre-Publication Bibliographies</b></summary>
+<summary><b>4. Policy-Invariant Reward Shaping from LLM Feedback: A Framework for Hybrid RL Agents</b></summary>
 
 | 字段 | 内容 |
 |------|------|
-| **作者** | Shaolong Chen、Yanlin Fei、Nazhou Liu、Xinmiao Yu、Lei Li 等（共 9 人） |
+| **作者** | Christophe D. Hounwanou、John Emeka Eze、Yaé U. Gaba |
 | **所属机构** | （详见原文） |
-| **顶级机构标签** | TRI |
-| **发布时间** | 2026-08-17T14:44:30Z |
-| **关键词** | `Multi-Agent` · `Benchmark` |
-| **原文链接** | [http://arxiv.org/abs/2608.16645v1](http://arxiv.org/abs/2608.16645v1) |
+| **顶级机构标签** | HIT |
+| **发布时间** | 2026-08-18T16:55:46Z |
+| **关键词** | `Reinforcement Learning` |
+| **原文链接** | [http://arxiv.org/abs/2608.18008v1](http://arxiv.org/abs/2608.18008v1) |
 
 **📝 摘要概括：**
 
-> 当只给出论文的出版前参考书目时，语言模型能否恢复已发表论文的真正研究理念？我们引入了重建，这是一个盲目的想法恢复基准，它保留了种子纸和所有同期或未来的文献，并要求模型提出假设，即独立的大型语言模型法官与坚持的地面真理想法相匹配。本草案报告了方案、防泄漏设备……
+> 将大型语言模型与强化学习相结合越来越受到探索，但LLM衍生奖励信号的理论状态往往是隐含的。我们将LLM-planner和RL-controller混合架构形式化为目标增强马尔可夫决策过程，并表明当LLM每状态进度分数用作有界势函数时，即使LLM…
 
 </details>
 
 <details>
-<summary><b>17. PDDLCoder: Agentic PDDL Generation for LLM-Assisted Symbolic Planning</b></summary>
+<summary><b>5. EvoTS-Agent: A Self-Evolving LLM Agent for Financial Time Series Change Point Detection</b></summary>
 
 | 字段 | 内容 |
 |------|------|
-| **作者** | Veit Laule、Jiangtao Shuai、Manfred Hauswirth、Sonja Schimmler |
+| **作者** | Lei Jiang、Ye Wei、Xinyu Xi、Jordan Langham-Lopez、Yifan Bao 等（共 10 人） |
 | **所属机构** | （详见原文） |
 | **顶级机构标签** | MIT |
-| **发布时间** | 2026-08-17T14:34:56Z |
-| **关键词** | `Agentic` · `Planning` · `Benchmark` · `Evaluation` |
-| **原文链接** | [http://arxiv.org/abs/2608.16637v1](http://arxiv.org/abs/2608.16637v1) |
+| **发布时间** | 2026-08-18T15:55:32Z |
+| **关键词** | `LLM Agent` · `Benchmark` · `Workflow` |
+| **原文链接** | [http://arxiv.org/abs/2608.17933v1](http://arxiv.org/abs/2608.17933v1) |
 
 **📝 摘要概括：**
 
-> LLM在长期规划中仍然不可靠，通常会产生逻辑不一致或不适用的计划。最近的混合方法将自然语言转换为规划域定义语言（ PDDL ） ，允许符号规划人员生成可验证的计划。我们的工作证明了代理PDDL生成用于规划的有效性，并为LLM辅助符号平台的未来研究建立了可重复的基准…
+> 金融时间序列表现出非平稳和异构的统计特性，使得变更点检测具有挑战性，因为没有单一的无监督算法在资产和市场制度中一致地执行。因此，传统工作流程在很大程度上依赖于专家驱动的模型选择、特征设计和超参数调整，从而限制了其可扩展性和适应性。跨四个基准数据集的实验演示了……
 
 </details>
 
 <details>
-<summary><b>18. The Working Set of a Coding Agent: Coherence Debt in Repository-Scale Tasks</b></summary>
+<summary><b>6. Collective Counterfactual Planning: Coordination, Consent, and Verification under Representational Constraints</b></summary>
 
 | 字段 | 内容 |
 |------|------|
-| **作者** | Bardia Mohammadi、Lars Klein、Aman Chadha、Akhil Arora、Laurent Bindschaedler |
+| **作者** | Chainarong Amornbunchornvej |
 | **所属机构** | （详见原文） |
-| **顶级机构标签** | TRI |
-| **发布时间** | 2026-08-17T14:30:41Z |
-| **关键词** | `Memory` |
-| **原文链接** | [http://arxiv.org/abs/2608.16630v1](http://arxiv.org/abs/2608.16630v1) |
+| **顶级机构标签** | MIT、TRI |
+| **发布时间** | 2026-08-18T15:52:12Z |
+| **关键词** | `Planning` · `Memory` |
+| **原文链接** | [http://arxiv.org/abs/2608.17932v1](http://arxiv.org/abs/2608.17932v1) |
 
 **📝 摘要概括：**
 
-> 存储库规模编码要求代理在有界上下文窗口内保持测试、导入、配置和迁移规则的一致性。我们将其建模为重建耦合事实图：在每次编辑时，所需的事实来自最近的上下文或参数记忆，而两者所涵盖的事实都不构成一致性债务。当客服代表写信时，线束应保留编辑所依赖的事实，并根据以下内容检查可用性……
+> 小组通常会完成任何单个成员都无法单独计划、执行或验证的项目。我们提出了这种现象的正式模型，即集体反事实规划（ CCP ） ，其中每个代理的约束限制既不是能力，也不是知识，也不是可观察性，而是代表性几何：每个代理感知状态，构思动作，同意行动，并仅通过对年龄的投影来证明目标要求……
 
 </details>
 
 <details>
-<summary><b>19. Cost Scales with Change, Not Corpus Size: Incrementally Maintaining an Evolving Semantic Substrate</b></summary>
+<summary><b>7. A Theoretical Framework for Parallel Lifelong MAPF Using Group Decentralized Planning</b></summary>
 
 | 字段 | 内容 |
 |------|------|
-| **作者** | Yusuke Takahashi、Kyle Wild、Asako Uraki |
+| **作者** | Alex DeWeese、Jiaoyang Li、Guannan Qu |
 | **所属机构** | （详见原文） |
-| **顶级机构标签** | TRI |
-| **发布时间** | 2026-08-17T14:21:15Z |
-| **关键词** | `Agentic` · `Retrieval` |
-| **原文链接** | [http://arxiv.org/abs/2608.16621v1](http://arxiv.org/abs/2608.16621v1) |
+| **顶级机构标签** | MIT、Mila、TRI |
+| **发布时间** | 2026-08-18T15:48:18Z |
+| **关键词** | `Multi-Agent` · `Planning` · `RAG` |
+| **原文链接** | [http://arxiv.org/abs/2608.17928v1](http://arxiv.org/abs/2608.17928v1) |
 
 **📝 摘要概括：**
 
-> 检索-增强和代理问答系统越来越多地在查询时重新推导语料库的含义。简单地说，不是重新推导语料库在每个问题上的含义，而是在文档到达时完成一次工作，然后仅被查阅-一个编译器，而不是一个意义的解释器。结果支持保持而不是重复重建语义基础。
+> 在Lifelong Multi-Agent Path Finding （ L-MAPF ）问题中，座席必须反复从一个目的地移动到另一个目的地，同时避免障碍物和座席间碰撞。滚动地平线碰撞解决（ RHCR ）框架被广泛认为是解决这一问题的最佳解决方案之一。最后，我们表明，在不同的地图中， GD-RHCR能够实现高吞吐量，可扩展到更高的座席数量，同时保持…
 
 </details>
 
 <details>
-<summary><b>20. Physics of Agents: Statistical Mechanics Predicts Collective Behavior of AI Agents</b></summary>
+<summary><b>8. AutoResearch: Insight In, Hallucination Out</b></summary>
 
 | 字段 | 内容 |
 |------|------|
-| **作者** | Batu El、Jinhee Paeng、Fatih Dinc、Shiye Su、Mete Erdogan 等（共 10 人） |
+| **作者** | Yiming Ren、Xiang Liu、Qumeng Sun、Xiao Zhang、Jiahao Li 等（共 7 人） |
 | **所属机构** | （详见原文） |
 | **顶级机构标签** | TRI |
-| **发布时间** | 2026-08-17T13:41:24Z |
-| **关键词** | `Multi-Agent` · `AI Agent` · `Reasoning` |
-| **原文链接** | [http://arxiv.org/abs/2608.16578v1](http://arxiv.org/abs/2608.16578v1) |
+| **发布时间** | 2026-08-18T15:38:26Z |
+| **关键词** | `Retrieval` · `Benchmark` · `Workflow` |
+| **原文链接** | [http://arxiv.org/abs/2608.17906v1](http://arxiv.org/abs/2608.17906v1) |
 
 **📝 摘要概括：**
 
-> 人工智能代理越来越多地作为交互系统的一部分而不是孤立地运行。随着代理人交换信息并共同做出决策，他们的互动可以改善集体推理，但也可能产生放牧、两极分化或放大共同的偏见。总体而言，我们的研究结果表明，像其他复杂系统一样，人工智能代理的集体行为遵循紧凑和预测的动态规律。
+> 自主研究系统越来越能够执行长时间的研究工作流程，但仅靠自动化并不能确保由此产生的过程保持科学基础。我们引入了AutoResearch ，这是一个将创意生成与创意执行联系起来的两阶段系统，以解决研究创意是如何形成的，以及如何通过实验可靠地建立起来的。这些结果展示了一个研究过程，在这个过程中， …
+
+</details>
+
+<details>
+<summary><b>9. AdaLens: Interactive Storyline for Monitoring and Steering Long-Running Agentic Data Analysis</b></summary>
+
+| 字段 | 内容 |
+|------|------|
+| **作者** | Yangtian Liu、Yan Miao、Shuhan Liu、Yunfan Zhou、Dae Hyun Kim 等（共 7 人） |
+| **所属机构** | （详见原文） |
+| **顶级机构标签** | CAS |
+| **发布时间** | 2026-08-18T14:34:45Z |
+| **关键词** | `Agentic` · `Reasoning` · `Workflow` |
+| **原文链接** | [http://arxiv.org/abs/2608.17834v1](http://arxiv.org/abs/2608.17834v1) |
+
+**📝 摘要概括：**
+
+> 大型语言模型正在将数据科学推向越来越自主和代理化的工作流程，最近的系统已经支持多步骤和长期运行的分析。随着这些工作流程变得更加自主，传统界面不再为两个关键要求提供足够的支持：理解客服代表不断发展的推理和证据的可观察性，以及重定向低价值方向或深化…
+
+</details>
+
+<details>
+<summary><b>10. Debate Training Reduces Reward Hacking in RLAIF</b></summary>
+
+| 字段 | 内容 |
+|------|------|
+| **作者** | Zachary Kenton、Lili Janzer、Rory Greig、Tian Huey Teh、Kirill Tyshchuk 等（共 11 人） |
+| **所属机构** | （详见原文） |
+| **顶级机构标签** | MIT、TRI |
+| **发布时间** | 2026-08-18T13:40:29Z |
+| **关键词** | `Multi-Agent` · `Reinforcement Learning` |
+| **原文链接** | [http://arxiv.org/abs/2608.17776v1](http://arxiv.org/abs/2608.17776v1) |
+
+**📝 摘要概括：**
+
+> 我们证明，与从人工智能反馈（ RLAIF ）基线进行强化学习相比，使用辩论（由较弱的LLM法官裁定的生成者和批评者之间的双人对抗游戏）对LLM进行RL微调，可以减少奖励黑客攻击。奖励黑客是RLAIF的核心障碍：随着培训的进展，该策略学会利用其AI判断中的系统错误，降低任务性能，这一问题在…
+
+</details>
+
+<details>
+<summary><b>11. D$^2$ACCI: A Dual-Loop Diagnostic Protocol for Evidence-Preserving Agent Memory</b></summary>
+
+| 字段 | 内容 |
+|------|------|
+| **作者** | Xule Liu、Yijun Liu、Chao Li、Shao Kun |
+| **所属机构** | （详见原文） |
+| **顶级机构标签** | TRI |
+| **发布时间** | 2026-08-18T13:18:38Z |
+| **关键词** | `LLM Agent` · `Retrieval` · `Benchmark` · `Evaluation` · `Memory` |
+| **原文链接** | [http://arxiv.org/abs/2608.17756v1](http://arxiv.org/abs/2608.17756v1) |
+
+**📝 摘要概括：**
+
+> 内存是LLM代理的关键能力。持久记忆将此扩展到整个会话--启用召回、修改和个性化。这些结果表明，健壮的记忆系统迭代需要可追溯的、统计学上接地和回归感知的证据--正是差距D $ ^ 2 $ ACCI填补。
+
+</details>
+
+<details>
+<summary><b>12. Beyond Suspicious Steps: Ontological Trust in Long-Horizon Agents</b></summary>
+
+| 字段 | 内容 |
+|------|------|
+| **作者** | An He、Yao Wang、Haibin Zhang |
+| **所属机构** | （详见原文） |
+| **顶级机构标签** | MIT |
+| **发布时间** | 2026-08-18T12:44:43Z |
+| **关键词** | `RAG` · `Benchmark` |
+| **原文链接** | [http://arxiv.org/abs/2608.17718v1](http://arxiv.org/abs/2608.17718v1) |
+
+**📝 摘要概括：**
+
+> 远景代理越来越多地跨越许多步骤、工具和观察。在此设置中，相关的监督问题不仅是每个操作是否在本地有效，而且是不断变化的轨迹是否仍然对应于用户授权的任务。伪一致性更难：检测取决于任务完成是否在外部可见，这是我们根据经验描述的结构限制。
+
+</details>
+
+<details>
+<summary><b>13. Cross-View Correspondence Is a Measurement Intervention: Two-Sided Validation for Agent Evaluation and Credit Assignment</b></summary>
+
+| 字段 | 内容 |
+|------|------|
+| **作者** | Zhen Zhang、Ahmad Hafez、Amr Alanwar |
+| **所属机构** | （详见原文） |
+| **顶级机构标签** | MIT、TRI |
+| **发布时间** | 2026-08-18T12:39:21Z |
+| **关键词** | `Evaluation` |
+| **原文链接** | [http://arxiv.org/abs/2608.17713v1](http://arxiv.org/abs/2608.17713v1) |
+
+**📝 摘要概括：**
+
+> 座席评估和基于跟踪的学习通常通过被视为中性预处理的回复后对应来比较转换后的视图中的输出。我们证明了这种对应是一种测量干预：省略它可以产生灵敏度，过度激进的映射可以产生不变性，多个最优对应可以留下机制标签和签名学习信用未识别。跨视图对应…
+
+</details>
+
+<details>
+<summary><b>14. GADR: Gathering Architecture Decision Records from Meeting Transcriptions</b></summary>
+
+| 字段 | 内容 |
+|------|------|
+| **作者** | Lucas Daniel Costa da Silva、Kiev Gama |
+| **所属机构** | （详见原文） |
+| **顶级机构标签** | HIT |
+| **发布时间** | 2026-08-18T12:11:42Z |
+| **关键词** | `Multi-Agent` · `Agentic` · `RAG` · `Evaluation` · `Workflow` |
+| **原文链接** | [http://arxiv.org/abs/2608.17694v1](http://arxiv.org/abs/2608.17694v1) |
+
+**📝 摘要概括：**
+
+> 现有的基于LLM的架构决策记录（ ADR ）生成方法共享一个关键且基本上未经审查的假设：该输入已经合理结构化。在实践中，建筑决策产生于非正式、嘈杂的会议，在这些会议中，选择是隐含的、支离破碎的，并且与偏离主题的对话纠缠在一起，这正是单通道提示退化的条件。该研究还解决了未充分探索的权衡……
+
+</details>
+
+<details>
+<summary><b>15. Benchmarking Automated Security Patch Backporting: How Far Are We?</b></summary>
+
+| 字段 | 内容 |
+|------|------|
+| **作者** | Jincheng Yang、Yulong Fu、Chengwei Liu、Lyuye Zhang、Fangyuan Zhang 等（共 8 人） |
+| **所属机构** | （详见原文） |
+| **顶级机构标签** | MIT、CAS |
+| **发布时间** | 2026-08-18T11:43:10Z |
+| **关键词** | `LLM Agent` · `Benchmark` · `Evaluation` |
+| **原文链接** | [http://arxiv.org/abs/2608.17671v1](http://arxiv.org/abs/2608.17671v1) |
+
+**📝 摘要概括：**
+
+> 自动安全补丁回移对于缓解N天的漏洞至关重要。最近的工具报告其各自数据集的成功率超过80%。可执行文件反馈细化可为最难的可执行文件提供有限但可衡量的恢复。
+
+</details>
+
+<details>
+<summary><b>16. GraphWake: Group Polarization via Memory-Mediated Polarization Cascade in LLM-Agent Communities</b></summary>
+
+| 字段 | 内容 |
+|------|------|
+| **作者** | Haoran Bu、Zejian Chen、Litian Zhang、Xi Zhang |
+| **所属机构** | （详见原文） |
+| **顶级机构标签** | CAS、TRI |
+| **发布时间** | 2026-08-18T11:38:56Z |
+| **关键词** | `Retrieval` · `Memory` |
+| **原文链接** | [http://arxiv.org/abs/2608.17665v1](http://arxiv.org/abs/2608.17665v1) |
+
+**📝 摘要概括：**
+
+> 由LLM驱动的代理可以在在线平台上自主交换意见并形成社区。这种智能体运营的社交平台引发了一个新的安全问题：攻击者可能会操纵智能体来诱发群体极化。这些发现揭示了社区层面的两极分化风险。
+
+</details>
+
+<details>
+<summary><b>17. MobileWorldSafety: Benchmarking GUI Agent Safety Against Environmental Injection Attacks in Android Apps</b></summary>
+
+| 字段 | 内容 |
+|------|------|
+| **作者** | Sujin Chen、Lijun Li、Tianyi Du、Jing Shao |
+| **所属机构** | （详见原文） |
+| **顶级机构标签** | CAS |
+| **发布时间** | 2026-08-18T11:33:22Z |
+| **关键词** | `Benchmark` · `Evaluation` |
+| **原文链接** | [http://arxiv.org/abs/2608.17659v1](http://arxiv.org/abs/2608.17659v1) |
+
+**📝 摘要概括：**
+
+> 自主操作智能手机的LLM驱动的GUI代理正在从研究原型迅速过渡到早期的真实世界部署。但是，由于这些药剂经常处理不可信的环境内容，因此它们非常容易受到环境注入攻击，包括间接提示注入和对抗性指令。MobileWorldSafety为量化这些漏洞和推进……提供了基础
 
 </details>
 
@@ -411,6 +354,7 @@
 
 | 日期 | 论文数 | 报告链接 |
 |------|--------|----------|
+| 2026-08-19 | 17 篇 | [2026-08-19.md](daily/2026-08-19.md) |
 | 2026-08-18 | 20 篇 | [2026-08-18.md](daily/2026-08-18.md) |
 | 2026-08-17 | 0 篇 | [2026-08-17.md](daily/2026-08-17.md) |
 | 2026-08-16 | 0 篇 | [2026-08-16.md](daily/2026-08-16.md) |
@@ -440,7 +384,6 @@
 | 2026-07-22 | 20 篇 | [2026-07-22.md](daily/2026-07-22.md) |
 | 2026-07-21 | 20 篇 | [2026-07-21.md](daily/2026-07-21.md) |
 | 2026-07-20 | 0 篇 | [2026-07-20.md](daily/2026-07-20.md) |
-| 2026-07-19 | 0 篇 | [2026-07-19.md](daily/2026-07-19.md) |
 
 ## 🏛️ 顶级机构覆盖范围
 
@@ -453,4 +396,4 @@
 
 ---
 
-*由 [clawBot DailyFindings](https://github.com/Jacob-biu/clawBot) 自动维护 | 最后更新：2026-08-18 22:21 UTC*
+*由 [clawBot DailyFindings](https://github.com/Jacob-biu/clawBot) 自动维护 | 最后更新：2026-08-19 22:22 UTC*
